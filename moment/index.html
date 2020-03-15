@@ -4,21 +4,43 @@
     <title>Something</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="index.css" />
+    <style>
+    #divPosition{
+      position: absolute;
+      top:50%;
+      left:45%;
+      padding:5px;
+      margin-top: 175px;
+    }
+    #wrapper{
+      width: -webkit-fill-available;
+      position: absolute;
+      margin: 20px;
+    }
+    </style>
   </head>
+
   <body>
+    <div id = "wrapper">
       <div class="js-clock">
-        <h1>00:00</h1>
+        <h2>00:00</h2>
       </div>
+      <span class="js-weather weather"></span>
+    </div>  
       <form class="js-form form">
         <input type="text" placeholder="What is your name?">
       </form>
       <h4 class="js-greetings greetings"></h4>
+    <div id="divPosition">
       <form class = "js-toDoForm">
         <input type="text" placeholder="Get started on new project">
       </form>
-      <ul class= "js-toDoList">
-        
-      </ul>
+      <ul class= "js-toDoList"></ul>
+    </div>
+    
+
+    
+
       <script src = "clock.js"></script>
       <script src="greeting.js"></script>
       <script src="todo.js"></script>
