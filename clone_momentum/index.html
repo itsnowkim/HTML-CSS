@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>clone_momentum</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+            background: url(images/image_4.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #464646;
+        }
+    </style>
+    
+
+  </head>
+
+  <body>
+      
+      <div class="top-row">
+          <div class="top-left">
+              <div id="links">Links</div>
+              <form action="https://www.google.com/search" method="GET" id="search-bar">
+                  <input autocomplete="off" name = "q" type="search" placeholder="Search">
+              </form>
+          </div>
+          <div class="top-right">
+            <span class="weather"></span>
+          </div>
+      </div>
+    
+      <div class="center">
+          <div class="clock">00:00</div>
+          <form class="js-form">
+            <input type="text" placeholder="What is your name?">
+          </form>
+          <div class="js-greetings greeting"></div>
+      </div>
+
+      <div class="center-below">
+        <p class="todo">todo</p>
+        <form class="js-toDoForm formInput">
+          <input type="text" id="myInput" placeholder="ToDo..." autocomplete="off">
+        </form>
+        <ul class = "js-toDoList toDoList"></ul>
+      </div>
+
+      <script src = "greetings.js"></script>
+      <script src = "clock.js"></script>
+      <script src = "weather.js"></script>
+      <script src = "todo.js"></script>
+      
+    </body>  
+
+</html>
